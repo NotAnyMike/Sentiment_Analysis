@@ -1,6 +1,15 @@
-import csv, json
+import json, codecs
 
-def Csv_to_json(filename, fields):
-    csvfile = open(filename, 'r')
-    reader = csv.DictReader( csvfile, fields) 
-    out = json.dumps([row for row in reader])
+def SemicolonToJson(filename,fields):
+    toReturn = []
+    with codecs.open(filename, 'r', encoding='utf-8', errors='replace') as f:
+        for line in f:
+            values = map(lambda s: s.strip(), line.split(";"))
+            value = {}
+            for attribute in fields:
+                index = fields.index(attribute)
+                value[attribute] = values[index]
+
+            toReturn.append(value)
+
+    return toReturn
