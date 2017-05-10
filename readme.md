@@ -13,7 +13,8 @@ Here will be located the respository for the Sentiment Analysis project for the 
 
 * In mac there is a bug, when downloading the csv file from google spreadsheet the encoding will have some problems with special characters and given that we working in spanish it a serious problem, to solve it save the downloaded file with numbers (at least in mac) and make the endode `ult-8`.
 * Considere change words as __xq__ to __porque__
-* the general algorithm could be improved by taking into account the emojis
+* The general algorithm could be improved by taking into account the emojis
+* In order to make the algorithm work it is necesary to download the ntlk stop words for spanish and (i don't know if ture) the stemmer too.
 
 ## In order to run this section do
 1. change to the directory
