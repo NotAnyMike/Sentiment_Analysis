@@ -33,4 +33,4 @@ This project will use MongoDB as a database, in order to run it run `mongod --db
 
 # Feature Ingineering
 
-This can be improved by the use of feature learning, but I could take more time
+This can be improved by the use of feature learning, but I could take more time. It would be good to have a look at [this](https://www.springerprofessional.de/en/a-performance-comparison-of-feature-extraction-methods-for-senti/12174434)
