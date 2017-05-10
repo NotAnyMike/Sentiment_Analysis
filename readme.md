@@ -2,6 +2,14 @@
 
 Here will be located the respository for the Sentiment Analysis project for the CL UTL.
 
+# Data preprocessing
+
+1. Upload data from google spreadshit to mongodb (it can be improved recoleting the data directly into the db)
+2. General cleaning
+2. Tokenize the sentence
+3. Remove stop words
+5. Steamming
+
 ## General information
 
 This project will use MongoDB as a database, in order to run it run `mongod --dbpath docs/db`
