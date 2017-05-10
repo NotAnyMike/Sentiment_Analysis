@@ -1,6 +1,16 @@
 # Sentiment Analysis Project
 
-Here will be located the respository for the Sentiment Analysis project for the CL UTL.
+Here will be located the respository for the Sentiment Analysis project for the CL UTL. This project will be following the methodology used by the DNP project based on the peace process, with some minor changes. Later one this proyect will be expanded in order to improve it significantly
+
+# General information
+
+This project will use MongoDB as a database, in order to run it run `mongod --dbpath docs/db`
+
+## Useful commands
+
+* Don't forget to do `source sa/bin/activate` and `pip freeze > requirements.txt`
+* I recommend to have the MongoDB installed not only through pip, but also through the binary or brew
+* In order to use `networkx` it is necesary to have installed `GDAL` if it rises an error taying to install it use a speacial version for instance `pip install GDAL==1.10.0` (I think this one is for another project lol)
 
 # Data preprocessing
 
@@ -21,12 +31,6 @@ Here will be located the respository for the Sentiment Analysis project for the 
 2. `source sa/bin/activate` in order to start the virtual environment
 3. `python test.py`
 
-# General information
+# Feature Ingineering
 
-This project will use MongoDB as a database, in order to run it run `mongod --dbpath docs/db`
-
-## Useful commands
-
-* Don't forget to do `source sa/bin/activate` and `pip freeze > requirements.txt`
-* I recommend to have the MongoDB installed not only through pip, but also through the binary or brew
-* In order to use `networkx` it is necesary to have installed `GDAL` if it rises an error taying to install it use a speacial version for instance `pip install GDAL==1.10.0` (I think this one is for another project lol)
+This can be improved by the use of feature learning, but I could take more time
