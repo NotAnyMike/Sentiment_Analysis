@@ -38,3 +38,4 @@ This can be improved by the use of feature learning, but I could take more time.
 #For later
 
 * Use GoogleVis to print the graphs
+* Use Categorical Probability Proportion Difference (CPPD) insted of CPD
