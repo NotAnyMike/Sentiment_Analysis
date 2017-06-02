@@ -12,6 +12,7 @@ def SemicolonToJson(filename,fields):
         for line in lines:
             line = line.replace("\s","")
             if line:
+
                 #values = map(lambda s: s.strip(), line.split(","))
                 values = list(map(lambda s: s, re.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)",line)))
                 value = {}
@@ -19,8 +20,14 @@ def SemicolonToJson(filename,fields):
                     try:
                         index = fields.index(attribute)
                         value[attribute] = values[index]
+                        if len(value[attribute]) > 0 :
+                            value[attribute] = value[attribute].replace('""','"').strip('"')
                     except:
-                        print(line)
+                        print("'" + line + "'")
+                        for v in values:
+                            print(v)
+                        print(len(values))
+                        print(index)
                         raise
 
                 toReturn.append(value)
