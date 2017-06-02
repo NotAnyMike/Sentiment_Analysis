@@ -16,7 +16,7 @@ This project will use MongoDB as a database, in order to run it run `mongod --db
 
 1. Upload data from google spreadsheet to mongodb (it can be improved recoleting the data directly into the db)
 2. General cleaning
-3. Remover repetitions
+3. Remover repetitions (not necessary true)
 2. Tokenize the sentence
 3. Remove stop words
 5. Steamming
@@ -31,7 +31,7 @@ This project will use MongoDB as a database, in order to run it run `mongod --db
 2. `source sa/bin/activate` in order to start the virtual environment
 3. `python test.py`
 
-# Feature Ingineering
+# Feature Engineering
 
 This can be improved by the use of feature learning, but I could take more time. It would be good to have a look at [this](https://www.springerprofessional.de/en/a-performance-comparison-of-feature-extraction-methods-for-senti/12174434)
 

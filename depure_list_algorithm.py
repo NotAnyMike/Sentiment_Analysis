@@ -13,7 +13,7 @@ entries = SemicolonToJson(file_location, ["date", "user", "full_name", "tweet", 
 
 #change depure the tweets
 for entry in entries:
-    entry["depured"] = re.sub(r'(https)([^\s]*)(\s|$)', '', entry["tweet"].lower())
+    entry["depured"] = re.sub(r'(https)([^(\s|\"|,)]*)(?:(\"|,|\s|$))', '', entry["tweet"].lower())
 
 #save the value
 f = csv.writer(open(file_location.replace(".csv", "") + "_depured.csv", "w", encoding='utf-8-sig'), dialect='excel', delimiter=";")
