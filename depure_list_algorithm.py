@@ -16,7 +16,7 @@ for entry in entries:
     entry["depured"] = re.sub(r'(https)(([^(\"|,)|\s|$])*)(?=(?:\"|\,|\s|$))', '', entry["tweet"].lower())
 
 #save the value
-f = csv.writer(open(file_location.replace(".csv", "") + "_depured.csv", "w", encoding='utf-8-sig'), dialect='excel', delimiter=";")
+f = csv.writer(open(file_location.replace(".csv", "") + "_depured.csv", "w", encoding='utf-8-sig'), dialect='excel')
 
 # Write CSV Header, If you dont need that, remove this line
 f.writerow(["date", "user", "full_name", "tweet", "id", "app", "followers", "follows", "retweets", "favorites", "verified", "user_since", "location", "bio", "profile_img", "maps", "depured"])
